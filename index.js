@@ -1,11 +1,12 @@
 const app = require("express")();
 const bodyParser = require("body-parser")
+const dotenv = require("dotenv");
 
 const hotelRouter = require("./hotel.router")
 
 app.use(bodyParser.json())
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use("/hotel",hotelRouter)
 
