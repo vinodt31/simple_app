@@ -100,3 +100,11 @@ exports.delete = async function(req, res) {
           res.send({ status : "error", message: "somer error occured", details: e.message})
         }
 };
+
+exports.update = async function(req, res){
+  return res.send({ status : "success", message: "update details successfully"});
+}
+
+exports.test = async function(req, res){
+  return res.send({ status : "success", message: "update details successfully"});
+}
