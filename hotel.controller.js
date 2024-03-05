@@ -100,13 +100,3 @@ exports.delete = async function(req, res) {
           res.send({ status : "error", message: "somer error occured", details: e.message})
         }
 };
-
-exports.userList = async function(req, res){
-    try{
-      const result = await userList.userList();
-      return res.send(result)
-    }catch(e){
-      return res.send(e.message)
-    }
-
-}
