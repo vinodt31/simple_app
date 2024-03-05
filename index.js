@@ -3,12 +3,14 @@ const bodyParser = require("body-parser")
 const dotenv = require("dotenv");
 
 const hotelRouter = require("./hotel.router")
+const userRouter = require("./user.router")
 
 app.use(bodyParser.json())
 
 const PORT = process.env.PORT || 4000;
 
 app.use("/hotel",hotelRouter)
+app.use("/user",userRouter)
 
 
 app.listen(PORT,()=>{
