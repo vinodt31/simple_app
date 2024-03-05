@@ -102,6 +102,7 @@ exports.delete = async function(req, res) {
 };
 
 exports.update = async function(req, res){
+  console.log("check response : ", res);
   return res.send({ status : "success", message: "update details successfully"});
 }
 
