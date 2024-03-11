@@ -3,7 +3,7 @@
 const {Sequelize, DataTypes} = require("sequelize");
 const Hotel = require("./hotel.model");
 const Op = Sequelize.Op;
-const userList = require("./service.user")
+//const userList = require("./service.user")
 
 exports.findAll = async function(req, res) {
 
