@@ -4,7 +4,7 @@ const {Sequelize, DataTypes} = require("sequelize");
 const Hotel = require("./hotel.model");
 const Op = Sequelize.Op;
 const userList = require("./service.user")
-
+// get all hhotel list
 exports.findAll = async function(req, res) {
 
         try {
